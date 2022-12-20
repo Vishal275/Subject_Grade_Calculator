@@ -5,7 +5,6 @@
 }
 body {
     margin: 0;
-    /* width: 100vw; */
     height: 100vh;
     background: #ecf0f3;
     display: flex;
@@ -16,7 +15,6 @@ body {
     width:60vw;
     color: #4c9fad;
     background-color: #ecf0f3;
-    /* padding: 2%; */
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
 .container .cal_head h3{
@@ -64,13 +62,11 @@ body {
     background: #ecf0f3;
     padding: 10px;
     padding-left: 20px;
-    /* height: 50px; */
     width: 40%;
     font-size: 14px;
     border-radius: 50px;
     box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
-
 .container .result table{
     padding: 30px 15px;
     width: -webkit-fill-available;    
@@ -100,24 +96,20 @@ body {
         padding: 0px 10px;
     }
 }
-    @media only screen and (max-width: 480px) {
-        .container .container-2 .marks .s1 {
-            font-size: 12px;
-        }
-        .container .result table td {
-            font-size: 12px;
-        }
-        .container .marks .s1 input {
-            font-size: 10px;
-            padding: 5px;
-            padding-left: 10px;
-        }
-        .container .container-2 .marks .btn .cal_btn {
-            font-size: 11px;
-        }
-    }
 
-/* .container .container-2 .result tr {
-    padding: 2%;
-    display: flex;
-} */
+@media only screen and (max-width: 480px) {
+    .container .container-2 .marks .s1 {
+        font-size: 12px;
+    }
+    .container .result table td {
+        font-size: 12px;
+    }
+    .container .marks .s1 input {
+        font-size: 10px;
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .container .container-2 .marks .btn .cal_btn {
+        font-size: 11px;
+    }
+}
