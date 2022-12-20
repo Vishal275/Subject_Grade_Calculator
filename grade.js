@@ -13,7 +13,6 @@ function calculate(){
         if (english>100 || mathematics>100 || physics>100 || chemistry>100 || computer>100) {
             document.getElementById("alert_msg").innerHTML = `**Invalid marks`;
         }
-        
         else{
             document.getElementById('alert_msg').innerHTML = '';
             var obtained = english + mathematics + physics + chemistry + computer;
@@ -49,6 +48,4 @@ function calculate(){
             }
         }
     }
-
-    
 }
