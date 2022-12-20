@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    /* width: 100vw; */
+    height: 100vh;
+    background: #ecf0f3;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.container {
+    width:60vw;
+    color: #4c9fad;
+    background-color: #ecf0f3;
+    /* padding: 2%; */
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+.container .cal_head h3{
+    background: #d8dee3;
+    color: #1DA1F2;
+    padding: 3%;
+    font-size: 30px;
+    text-align: center;
+}
+.container .container-2 .marks {
+    padding: 15px;
+}
+.container .container-2 .marks .s1 {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2%;
+    align-items: center;
+}
+.container .container-2 .marks #alert_msg {
+    color: #ff0000;
+    padding: 2%;
+}
+.container .container-2 .marks .btn {
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.container .container-2 .marks .btn .cal_btn {
+    padding: 2%;
+    color: #ffffff;
+    background-color: #1DA1F2;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    border-radius: 50px;
+}
+.container .container-2 {
+    display: flex;
+}
+.container .marks,.container .result {
+    flex-basis: 50%;
+}
+.container .marks .s1 input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    /* height: 50px; */
+    width: 40%;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.container .result table{
+    padding: 30px 15px;
+    width: -webkit-fill-available;    
+}
+.container .result table tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+}
+.container .result table td {
+    font-size: 15px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 840px) {
+    .container .container-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .container .result table tr {
+        padding-left: 0;
+    }
+    .container .cal_head h3 {
+        font-size: 25px;
+    }
+    .container .result table {
+        padding: 0px 10px;
+    }
+}
+    @media only screen and (max-width: 480px) {
+        .container .container-2 .marks .s1 {
+            font-size: 12px;
+        }
+        .container .result table td {
+            font-size: 12px;
+        }
+        .container .marks .s1 input {
+            font-size: 10px;
+            padding: 5px;
+            padding-left: 10px;
+        }
+        .container .container-2 .marks .btn .cal_btn {
+            font-size: 11px;
+        }
+    }
+
+/* .container .container-2 .result tr {
+    padding: 2%;
+    display: flex;
+} */
